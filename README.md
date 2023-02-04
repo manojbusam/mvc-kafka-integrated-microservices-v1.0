@@ -2,7 +2,7 @@
 Microservice managing Producer and Consumer Near Real Time(NRT) data/ messages from Kafka Server 
 
 
-![Screenshot 2023-02-04 at 12 22 54 AM](https://user-images.githubusercontent.com/44409170/216750330-d4ca5d7b-f0fe-43ac-80aa-bf0c9efcb775.png)
+![Screenshot 2023-02-04 at 3 42 51 PM](https://user-images.githubusercontent.com/44409170/216788883-bbc6cf6e-35d9-47df-9e9d-67ff17c7c9fb.png)
 
 
 Step-by-step:
