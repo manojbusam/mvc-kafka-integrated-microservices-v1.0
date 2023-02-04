@@ -26,3 +26,8 @@ bin/zookeeper-server-start.sh config/zookeeper.properties
 2c. starting kafka:
 
 bin/kafka-server-start.sh config/server.properties
+
+3. Clone the project and open the following folder in IntelliJ
+
+https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/tree/main/kafka-microservices
+
