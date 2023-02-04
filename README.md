@@ -31,8 +31,10 @@ bin/kafka-server-start.sh config/server.properties
 
 https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/tree/main/kafka-microservices
 
-4. Define the consumer and producer properties:
+4. Define the consumer and producer properties at:
 
-at https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/blob/main/kafka-microservices/src/main/resources/application.properties
+https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/blob/main/kafka-microservices/src/main/resources/application.properties
 
-5. Create a topic and instantiate a bean
+5. Create a topic and instantiate a bean at:
+
+https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/blob/main/kafka-microservices/src/main/java/kafkamicroservices/config/KafkaTopicConfig.java
