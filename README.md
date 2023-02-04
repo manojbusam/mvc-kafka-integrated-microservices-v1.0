@@ -1,2 +1,2 @@
 # mvc-kafka-integrated-microservices-v1.0
-Microservice that pushes into and publishes from kafka broker 
+Microservice that produces and subscribes near real time data/ messages from Kafka Server 
