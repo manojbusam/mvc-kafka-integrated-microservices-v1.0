@@ -33,19 +33,19 @@ https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/tree/main/
 
 4. Define the consumer and producer properties at:
 
-https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/blob/main/kafka-microservices/src/main/resources/application.properties
+kafka-microservices/src/main/resources/application.properties
 
 5. Creating a topic inside Kafka Server:
 
-https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/blob/main/kafka-microservices/src/main/java/kafkamicroservices/config/KafkaTopicConfig.java
+kafka-microservices/src/main/java/kafkamicroservices/config/KafkaTopicConfig.java
 
 
 6. Creating a Producer Service:
 
-https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/blob/main/kafka-microservices/src/main/java/kafkamicroservices/kafka/KafkaProducer.java
+kafka-microservices/src/main/java/kafkamicroservices/kafka/KafkaProducer.java
 
 7. Creating a REST Controller:
-https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/blob/main/kafka-microservices/src/main/java/kafkamicroservices/controller/MessageController.java
+kafka-microservices/src/main/java/kafkamicroservices/controller/MessageController.java
 
 8. Publishing a message through REST call on browser:
 http:localhost:8080/api/v1.0/kafka/publish?message=This is a sample kafka microservices integartion!
@@ -62,6 +62,7 @@ Expected output in local:
 
 10. Reading the messages using consumer:
 
+kafka-microservices/src/main/java/kafkamicroservices/kafka/KafkaConsumer.java
 
 Expected output in Spring:
 Message received -> This is a sample kafka microservices integartion!
