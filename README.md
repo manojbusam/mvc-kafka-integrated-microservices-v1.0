@@ -8,15 +8,21 @@ Microservice that produces and subscribes near real time data/ messages from Kaf
 Step-by-step:
 
 1. Install Java 8+
+
 https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
 
 2. Install kafka
+
 https://kafka.apache.org/downloads
 
-2a. Reference: https://kafka.apache.org/quickstart
+2a. Reference: 
 
-2b. starting zookeeper
+https://kafka.apache.org/quickstart
+
+2b. starting zookeeper:
+
 bin/zookeeper-server-start.sh config/zookeeper.properties
 
-2c. starting kafka
+2c. starting kafka:
+
 bin/kafka-server-start.sh config/server.properties
