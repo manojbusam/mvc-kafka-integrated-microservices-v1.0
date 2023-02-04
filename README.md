@@ -31,3 +31,10 @@ bin/kafka-server-start.sh config/server.properties
 
 https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/tree/main/kafka-microservices
 
+4. Define the consumer and producer properties:
+a. bootstrap servers
+b. key, value serialization and deserialization classes
+c. topic name(s)
+
+at https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/blob/main/kafka-microservices/src/main/resources/application.properties
+
