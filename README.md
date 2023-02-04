@@ -13,10 +13,10 @@ https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
 2. Install kafka
 https://kafka.apache.org/downloads
 
-2a. Reference: https://kafka.apache.org/quickstart
+  2a. Reference: https://kafka.apache.org/quickstart
 
-2b. starting zookeeper
-bin/zookeeper-server-start.sh config/zookeeper.properties
+  2b. starting zookeeper
+  bin/zookeeper-server-start.sh config/zookeeper.properties
 
-2c. starting kafka
-bin/kafka-server-start.sh config/server.properties
+  2c. starting kafka
+  bin/kafka-server-start.sh config/server.properties
