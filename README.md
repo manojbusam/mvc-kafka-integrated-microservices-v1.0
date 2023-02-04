@@ -44,11 +44,24 @@ https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/blob/main/
 
 https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/blob/main/kafka-microservices/src/main/java/kafkamicroservices/kafka/KafkaProducer.java
 
-7. Create a REST Controller at:
+7. Creating a REST Controller:
 https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/blob/main/kafka-microservices/src/main/java/kafkamicroservices/controller/MessageController.java
 
-8. Publish a message through REST call:
+8. Publishing a message through REST call on browser:
 http:localhost:8080/api/v1.0/kafka/publish?message=This is a sample kafka microservices integartion!
 
 Expected output in browser:   
 Message sent to the topic
+
+9. Reading the messages in local:
+
+bin/kafka-console-consumer.sh --topic sample --from-beginning --bootstrap-server localhost:9092
+
+Expected output in local: 
+"This is a sample kafka microservices integartion!"
+
+10. Reading the messages using consumer:
+
+
+Expected output in Spring:
+Message received -> This is a sample kafka microservices integartion!
