@@ -35,6 +35,12 @@ https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/tree/main/
 
 https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/blob/main/kafka-microservices/src/main/resources/application.properties
 
-5. Create a topic and instantiate a bean at:
+5. Creating a topic inside Kafka Server:
 
 https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/blob/main/kafka-microservices/src/main/java/kafkamicroservices/config/KafkaTopicConfig.java
+
+
+6. Creating a Producer Service:
+
+https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/blob/main/kafka-microservices/src/main/java/kafkamicroservices/kafka/KafkaProducer.java
+
