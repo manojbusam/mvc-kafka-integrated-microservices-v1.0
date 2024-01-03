@@ -1,69 +1,59 @@
-# mvc-kafka-integrated-microservices-v1.0
-Microservice managing Producer and Consumer Near Real Time(NRT) data/ messages from Kafka Server 
+# Kafka-Integrated Microservices
 
+This repository contains a set of microservices integrated with Kafka for message communication.
 
-![Screenshot 2023-02-04 at 3 42 51 PM](https://user-images.githubusercontent.com/44409170/216788883-bbc6cf6e-35d9-47df-9e9d-67ff17c7c9fb.png)
+## Installation Steps
 
+### 1. Java Installation
+Install Java 8 or later. You can download Java from [Oracle's website](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html).
 
-## Step-by-step:
+### 2. Kafka Installation
+Install Kafka by downloading it from [Kafka's official website](https://kafka.apache.org/downloads).
 
-
-# 1. Install Java 8+
-
-https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
-
-# 2. Install kafka
-
-https://kafka.apache.org/downloads
-
-# 2a. starting zookeeper:
-
+#### 2a. Starting Zookeeper
+Start Zookeeper using the following command:
+```bash
 bin/zookeeper-server-start.sh config/zookeeper.properties
+```
 
-# 2b. starting kafka:
-
+#### 2b. Starting Kafka
+Start Kafka using the following command:
+```bash
 bin/kafka-server-start.sh config/server.properties
+```
 
-# 2c. Reference: 
+Reference: [Kafka Quickstart Guide](https://kafka.apache.org/quickstart)
 
-https://kafka.apache.org/quickstart
+## Project Setup
 
-# 3. Clone the project and open the following folder in IntelliJ
+### 3. Clone and Open Project
+Clone the project and open the `kafka-microservices` folder in IntelliJ IDEA.
 
-https://github.com/manojbusam/mvc-kafka-integrated-microservices-v1.0/tree/main/kafka-microservices
+### 4. Configuration
+Define consumer and producer properties in `kafka-microservices/src/main/resources/application.properties`.
 
-# 4. Define the consumer and producer properties at:
+### 5. Kafka Topic Setup
+Create a topic inside Kafka Server by configuring `KafkaTopicConfig.java` in `kafka-microservices/src/main/java/kafkamicroservices/config/`.
 
-kafka-microservices/src/main/resources/application.properties
+### 6. Producer Service
+Implement the Producer Service in `KafkaProducer.java` located at `kafka-microservices/src/main/java/kafkamicroservices/kafka/`.
 
-# 5. Creating a topic inside Kafka Server:
+### 7. REST Controller
+Create a REST Controller in `MessageController.java` at `kafka-microservices/src/main/java/kafkamicroservices/controller/`.
 
-kafka-microservices/src/main/java/kafkamicroservices/config/KafkaTopicConfig.java
+### 8. Publishing a Message
+Publish a message through a REST call using:
+```
+http://localhost:8080/api/v1.0/kafka/publish?message=This is a sample Kafka microservices integration!
+```
+Expected browser output: "Message sent to the topic"
 
-
-# 6. Creating a Producer Service:
-
-kafka-microservices/src/main/java/kafkamicroservices/kafka/KafkaProducer.java
-
-# 7. Creating a REST Controller:
-kafka-microservices/src/main/java/kafkamicroservices/controller/MessageController.java
-
-# 8. Publishing a message through REST call on browser:
-http:localhost:8080/api/v1.0/kafka/publish?message=This is a sample kafka microservices integartion!
-
-Expected output in browser:   
-Message sent to the topic
-
-# 9. Reading the messages in local:
-
+### 9. Reading Messages Locally
+Read messages locally using the command:
+```bash
 bin/kafka-console-consumer.sh --topic sample --from-beginning --bootstrap-server localhost:9092
+```
+Expected local output: "This is a sample Kafka microservices integration!"
 
-Expected output in local: 
-"This is a sample kafka microservices integartion!"
-
-# 10. Reading the messages using consumer:
-
-kafka-microservices/src/main/java/kafkamicroservices/kafka/KafkaConsumer.java
-
-Expected output in Spring:
-Message received -> This is a sample kafka microservices integartion!
+### 10. Reading Messages Using Consumer
+Check `KafkaConsumer.java` in `kafka-microservices/src/main/java/kafkamicroservices/kafka/` for reading messages in Spring.
