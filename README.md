@@ -1,5 +1,13 @@
 # Kafka-Integrated Microservices
 
+This repository contains a set of microservices integrated with Kafka for message communication.
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
 | Tool                          | Version/Requirements       |
 |-------------------------------|----------------------------|
 | [![Java](https://img.shields.io/badge/Java-8+-orange)](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html) | - |
@@ -8,7 +16,6 @@
 | ![Requests](https://img.shields.io/badge/requests-required-green) ![BeautifulSoup4](https://img.shields.io/badge/beautifulsoup4-required-green) ![Pandas](https://img.shields.io/badge/pandas-required-green) ![Matplotlib](https://img.shields.io/badge/matplotlib-required-green) ![Seaborn](https://img.shields.io/badge/seaborn-required-green) | Required Libraries |
 
 
-This repository contains a set of microservices integrated with Kafka for message communication.
 
 ## Installation Steps
 
